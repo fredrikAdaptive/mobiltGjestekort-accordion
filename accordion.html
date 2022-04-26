@@ -8,16 +8,38 @@
     <title>Gjestekort</title>
 </head>
 <body class="container">
-    <div class="row">
-        <div class="col-6">
-            <img class="img-fluid" src="/Design/Images/Logos/NewMainLogo.png">
-        </div>
-        <div class="col-6 text-end" data-bind="foreach: languages">
-            <a href="#" data-bind="click: function() { $root.selectedLanguage($data)}">
-                <img width="50" height="32" data-bind="attr: { 'alt': name, 'src': logo, 'title': name }" alt="Norsk" src="../Design/Images/Flags/nb-NO.svg" title="Norsk"></a>
+    <div class="row mt-2">
+        <!--
+
+            <div class="col-3">
+                <img height="50px" src="/Design/Images/Logos/Onvisit_by_Adaptive_orange_2020.png">
+            </div>
+        -->
         
-            <a href="#" data-bind="click: function() { $root.selectedLanguage($data)}">
-                <img width="50" height="32" data-bind="attr: { 'alt': name, 'src': logo, 'title': name }" alt="English" src="../Design/Images/Flags/en-GB.svg" title="English"></a>
+        <h2 class="col-12 text-center mb-0">on<span style="color: rgb(217, 110, 48);">V</span>isit Gjestekort</h2>
+        <!--
+
+            <div class="col-4 text-end">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Norsk <img src="Design/Images/Flags/no.svg" alt="Norsk språk" height="20px">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Norsk</a></li>
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                    </ul>
+                </div> 
+            -->
+
+            <!--
+
+                <a href="#">
+                    <img height="40px" alt="Engelsk flagg" src="../Design/Images/Flags/gb.svg" title="Engelsk flagg"></a>
+                </a>
+                <a href="#">
+                    <img height="40px" alt="Norsk flagg" src="Design/Images/Flags/no.svg" title="Norsk flagg">
+                </a>
+            -->
         </div>
     </div>
     <img class="mx-auto d-block" id="qr-container" src="qr.gif" alt="QR-kode">
