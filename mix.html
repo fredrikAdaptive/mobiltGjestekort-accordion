@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Mobilt gjestekort levert av Adaptive AS">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Gjestekort</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <!-- 
+            <div class="row mt-2 mb-0"> 
+                <h2 class="col-12 text-center mt-0 mb-0"><img src="Design/Images/Logos/Onvisit_by_Adaptive_orange_2020.png" height="50px" alt="Logo Adaptive AS"> Gjestekort</h2>
+            </div>
+        -->
+        <div class="row mt-2 mb-0">
+            <div class="col-3"><img src="Design/Images/Logos/Onvisit_by_Adaptive_orange_2020.png" height="50px" alt="Logo Adaptive AS"></div>
+            <h1 class="col-6 text-center">Gjestekort</h1>
+            <div class="col-3 text-end">
+                <a href="#"><img src="Design/Images/Flags/no.svg" alt="Norsk" height="20px"></a>
+                <a href="#"><img src="Design/Images/Flags/gb.svg" alt="English" height="20px"></a>
+                
+            </div>
+        </div>
+
+        <!-- QR-kode -->
+        <img class="mx-auto d-block" id="qr-container" src="qr.gif" alt="QR-kode">
+        
+        <!-- Sjekk inn / ut -->
+        <div class="col-12 text-center mb-1">
+            <button type="button" id="btn-check-in-out" class="btn btn-info">Sjekk inn</button>
+        </div>
+       
+        <!-- Gjestemottaker -->
+        <div class="row text-start">
+            <div class="col-3">Vert:</div>
+            <div class="col-9" id="recipient_fullnam">Kort Navn </div>
+            <div class="col-3">Firma:</div>
+            <div class="col-9" id="recipient_company">Adaptive AS</div>
+            <div class="col-3">Telefon:</div>
+            <div class="col-9" id="recipient_mobile">+47 987 65 432</div>
+        </div>
+
+        <hr class="mt-1 mb-1" style="border: 1px solid #d96e30; opacity: 0.5;">
+       
+        <!-- Besøkende -->
+        <div class="row text-start">
+            <div class="col-3">Gjest:</div>
+            <div class="col-9" id="visitor_fullnam">Navn Ukjent langt navn funker også </div>
+            <div class="col-3">Firma:</div>
+            <div class="col-9" id="visitor_company">Adaptive AS</div>
+        </div>
+
+        <hr class="mt-1 mb-1" style="border: 1px solid #d96e30; opacity: 0.5;">
+        
+
+        <!-- Ekstra informasjon -->
+        <div class="row text-start">
+            <div class="col-3" id="visit_timestamp_start">Fra:</div>
+            <div class="col-9">Klokkeslett, dato</div>
+            <div class="col-3">Til:</div>
+            <div class="col-9" id="visit_timestamp_end">Klokkeslett, dato</div>
+            <div class="col-3">Info:</div>
+            <div class="col-9" id="org_message">Hei, og velkommen til Adaptive AS. Håper du får en strålende dag!</div>
+        </div>
+        <hr class="mt-1 mb-1" style="border: 1px solid #d96e30; opacity: 0.5;">
+
+        
+        
+
+        <!-- Velg språk -->
+        <!-- 
+            <div class="col-12 text-center dropdown">
+                <button class="btn btn-info dropdown-toggle text-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Velg språk <img src="Design/Images/Flags/no.svg" alt="Norsk språk" height="25px">
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Norsk <img src="Design/Images/Flags/no.svg" alt="Norsk" height="20px"></a></li>
+                    <li><a class="dropdown-item" href="#">English <img src="Design/Images/Flags/gb.svg" alt="English" height="20px"></a></li>
+                </ul>
+            </div> 
+        -->
+
+
+         <!-- QR Text -->
+         <div class="col-12 text-center">
+            <a class="btn btn-info" data-bs-toggle="collapse" href="#QRinfo" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Informasjon om QR-kode og besøk
+            </a>
+        </div>
+          <div class="collapse" id="QRinfo">
+            <p class="card card-body">
+              Vennligst scan QR-koden over ved ankomst og ved utreise.
+            </p>
+          </div>
+
+    </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </body>
+    </html>
