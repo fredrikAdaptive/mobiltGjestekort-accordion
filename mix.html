@@ -31,21 +31,13 @@
         <img class="mx-auto d-block" id="qr-container" src="qr.gif" alt="QR-kode">
         
         <!-- Sjekk inn / ut -->
-        <div class="col-12 text-center mb-1">
-            <button type="button" id="btn-check-in-out" class="btn btn-info">Sjekk inn</button>
-        </div>
-       
-        <!-- Gjestemottaker -->
-        <div class="row text-start">
-            <div class="col-3">Vert:</div>
-            <div class="col-9" id="recipient_fullnam">Kort Navn </div>
-            <div class="col-3">Firma:</div>
-            <div class="col-9" id="recipient_company">Adaptive AS</div>
-            <div class="col-3">Telefon:</div>
-            <div class="col-9" id="recipient_mobile">+47 987 65 432</div>
-        </div>
-
-        <hr class="mt-1 mb-1" style="border: 1px solid #d96e30; opacity: 0.5;">
+        <!-- Kun ved Invite -->
+        
+        <!-- 
+            <div class="col-12 text-center mb-1">
+                <button type="button" id="btn-check-in-out" class="btn btn-info">Sjekk inn</button>
+            </div>
+        -->
        
         <!-- Besøkende -->
         <div class="row text-start">
@@ -55,20 +47,39 @@
             <div class="col-9" id="visitor_company">Adaptive AS</div>
         </div>
 
-        <hr class="mt-1 mb-1" style="border: 1px solid #d96e30; opacity: 0.5;">
+        <hr class="mt-1 mb-1" style="border: 1px solid #62C370; opacity: 0.5;">
+        
+        <!-- Gjestemottaker -->
+        <div class="row text-start">
+            <div class="col-3">Vert:</div>
+            <div class="col-9" id="recipient_fullname">Kort Navn </div>
+            <div class="col-3">Firma:</div>
+            <div class="col-9" id="recipient_company">Adaptive AS</div>
+            <div class="col-3">Telefon:</div>
+            <div class="col-9" id="recipient_mobile">+47 987 65 432</div>
+            <div class="col-3">Lokasjon:</div>
+            <div class="col-9" id="recipient_location">Sandvika</div>
+        </div>
+
+        <hr class="mt-1 mb-1" style="border: 1px solid #62C370; opacity: 0.5;">
+       
         
 
         <!-- Ekstra informasjon -->
         <div class="row text-start">
-            <div class="col-3" id="visit_timestamp_start">Fra:</div>
-            <div class="col-9">Klokkeslett, dato</div>
+            <div class="col-3">Fra:</div>
+            <div class="col-9" id="visit_timestamp_start">Klokkeslett, dato</div>
             <div class="col-3">Til:</div>
-            <div class="col-9" id="visit_timestamp_end">Klokkeslett, dato</div>
+            <div class="col-9" id="visit_timestamp_end">Klokkeslett, dato</div> 
             <div class="col-3">Info:</div>
-            <div class="col-9" id="org_message">Hei, og velkommen til Adaptive AS. Håper du får en strålende dag!</div>
+            <div class="col-9" id="org_message">Hei, og velkommen til Adaptive AS. Scann QR-koden over ved ankomst og avreise. På gjensyn :)</div>
         </div>
-        <hr class="mt-1 mb-1" style="border: 1px solid #d96e30; opacity: 0.5;">
+        <hr class="mt-1 mb-1" style="border: 1px solid #62C370; opacity: 0.5;">
 
+        <!-- Firma logo her -->
+        <div class="row text-center">
+            <img src="Design/Images/Logos/kg.png" alt="Firmaets logo" class="col-4 img-fluid mx-auto d-block">
+        </div>
         
         
 
@@ -84,19 +95,20 @@
                 </ul>
             </div> 
         -->
+         
+         <!-- 
 
-
-         <!-- QR Text -->
-         <div class="col-12 text-center">
-            <a class="btn btn-info" data-bs-toggle="collapse" href="#QRinfo" role="button" aria-expanded="false" aria-controls="collapseExample">
-              Informasjon om QR-kode og besøk
-            </a>
-        </div>
-          <div class="collapse" id="QRinfo">
-            <p class="card card-body">
-              Vennligst scan QR-koden over ved ankomst og ved utreise.
-            </p>
-          </div>
+             <div class="col-12 text-center">
+                 <a class="btn btn-info" data-bs-toggle="collapse" href="#QRinfo" role="button" aria-expanded="false" aria-controls="collapseExample">
+                     Informasjon om QR-kode og besøk
+                    </a>
+                </div>
+                <div class="collapse" id="QRinfo">
+                    <p class="card card-body">
+                        Vennligst scan QR-koden over ved ankomst og ved utreise.
+                    </p>
+                </div>
+            -->
 
     </div>
         
