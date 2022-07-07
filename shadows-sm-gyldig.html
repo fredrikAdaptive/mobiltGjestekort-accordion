@@ -12,13 +12,8 @@
     <div class="container">
         
         <!-- Header -->
-        <!-- 
-            <div class="row mt-2 mb-0"> 
-                <h2 class="col-12 text-center mt-0 mb-0"><img src="Design/Images/Logos/Onvisit_by_Adaptive_orange_2020.png" height="50px" alt="Logo Adaptive AS"> Gjestekort</h2>
-            </div>
-        -->
         <div class="row mt-2 mb-0">
-            <div class="col-3"><img src="Design/Images/Logos/Onvisit_by_Adaptive_orange_2020_small.webp" height="49.03" width="100" alt="Logo Adaptive AS"></div>
+            <div class="col-3"><img src="Design/Images/Logos/Onvisit_by_Adaptive_orange_2020_small.webp" height="49" width="100" alt="Logo Adaptive AS"></div>
             <h1 class="col-6 text-center">Gjestekort</h1>
             <div class="col-3 text-end">
                 <a href="#"><img src="Design/Images/Flags/no.svg" alt="Norsk" width="28" height="21"></a>
@@ -34,54 +29,43 @@
             Gyldig: #ABEAAC 
             Utløpt: #FFFFAA
         -->
-
         <div class="row text-start shadow-sm rounded mb-3 p-2" style="background: #ABEAAC;">
             <div class="col-3">Gyldig fra:</div>
             <div class="col-9" id="visit_timestamp_start">Klokkeslett, dato</div>
             <div class="col-3">Gyldig til:</div>
             <div class="col-9" id="visit_timestamp_end">Klokkeslett, dato</div>
             <div class="col-3">Status:</div>
-            <div class="col-9">Gjestekortet utløper om 2 timer og 5 minutter.</div>
+            <div class="col-9" id="visit_time_remaining">Gjestekortet utløper om 2 timer og 5 minutter.</div>
         </div>
         
         <!-- Sjekk inn / ut -->
         <!-- Kun ved Invite -->
-        
-        <!-- 
+        <!--     
             <div class="col-12 text-center mb-1">
                 <button type="button" id="btn-check-in-out" class="btn btn-info">Sjekk inn</button>
             </div>
         -->
+
         
         <!-- Besøkende -->
 
         <div class="row text-start shadow-sm rounded mb-3 p-2">
             
             <div class="col-3">Gjest:</div>
-            <div class="col-9" id="visitor_fullname">Navn Ukjent langt navn funker også </div>
+            <div class="col-9" id="visitor_fullname">Ola Nordmann </div>
             <div class="col-3">Firma:</div>
             <div class="col-9" id="visitor_company">Adaptive AS</div>
         </div>
         
-        <!-- 
-            <hr class="mt-1 mb-1" style="border: 1px solid #62C370; opacity: 0.5;">
-        -->
-        
         <!-- Gjestemottaker -->
         <div class="row text-start shadow-sm rounded mb-3 p-2">
             <div class="col-3">Vert:</div>
-            <div class="col-9" id="recipient_fullname">Kort Navn </div>
+            <div class="col-9" id="recipient_fullname">Kari Nordmann</div>
             <div class="col-3">Firma:</div>
             <div class="col-9" id="recipient_company">Adaptive AS</div>
             <div class="col-3">Telefon:</div>
-            <div class="col-9" id="recipient_mobile">+47 987 65 432</div>
-            <div class="col-3">Lokasjon:</div>
-            <div class="col-9" id="recipient_location">Sandvika</div>
+            <div class="col-9" id="recipient_mobile">+47 999 99 999</div>
         </div>
-        
-        <!-- <hr class="mt-1 mb-1" style="border: 1px solid #62C370; opacity: 0.5;"> -->
-        
-        
         
         <!-- Ekstra informasjon -->
         <div class="row text-start shadow-sm rounded mb-3 p-2">
@@ -89,44 +73,12 @@
             <div class="col-3">Info:</div>
             <div class="col-9" id="org_message">Hei, og velkommen til Adaptive AS. Scann QR-koden over ved ankomst og avreise. På gjensyn :)</div>
         </div>
-        <!-- 
-            <hr class="mt-1 mb-1" style="border: 1px solid #62C370; opacity: 0.5;">
-        -->
         
-        <!-- Firma logo her -->
+        <!-- Firmalogo -->
         <div class="row text-center shadow-sm rounded mb-3 p-2">
             <img src="Design/Images/Logos/fk.png" width="100" height="50" alt="Firmaets logo" class="col-6 img-fluid mx-auto d-block">
         </div>
-        
-        
-        
-        <!-- Velg språk -->
-        <!-- 
-            <div class="col-12 text-center dropdown">
-                <button class="btn btn-info dropdown-toggle text-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    Velg språk <img src="Design/Images/Flags/no.svg" alt="Norsk språk" height="25px">
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Norsk <img src="Design/Images/Flags/no.svg" alt="Norsk" height="20px"></a></li>
-                    <li><a class="dropdown-item" href="#">English <img src="Design/Images/Flags/gb.svg" alt="English" height="20px"></a></li>
-                </ul>
-            </div> 
-        -->
-        
-        <!-- 
-            
-            <div class="col-12 text-center">
-                <a class="btn btn-info" data-bs-toggle="collapse" href="#QRinfo" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Informasjon om QR-kode og besøk
-                </a>
-            </div>
-            <div class="collapse" id="QRinfo">
-                <p class="card card-body">
-                    Vennligst scan QR-koden over ved ankomst og ved utreise.
-                </p>
-            </div>
-        -->
-        
+
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
